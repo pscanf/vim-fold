@@ -13,7 +13,7 @@ endfunction
 
 function! JSFoldText()
 	let foldsize = (v:foldend-v:foldstart)
-	return getline(v:foldstart).'('.foldsize.' lines)'
+	return getline(v:foldstart).' ('.foldsize.' lines)'
 endfunction
 
 setlocal foldmethod=expr
